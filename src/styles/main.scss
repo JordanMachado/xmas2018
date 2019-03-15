@@ -1,0 +1,49 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'qgregular';
+  cursor: none;
+  &.loading {
+    cursor: wait;
+  }
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+
+.start {
+  position: absolute;
+}
+.loaderScreen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('./bg.jpg');
+  letter-spacing: 3px;
+
+}
+.loaderScreenWrapper {
+  position: absolute;
+  text-align: center;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color:#2fc9e6;
+  font-size: 24px;
+  font-weight: 900;
+
+}
+.loaderscreenLoader {
+  position: relative;
+  width: 148px;
+  height: 127px;
+  background-image: url('./loader.gif');
+}
